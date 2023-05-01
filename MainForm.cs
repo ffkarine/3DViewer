@@ -199,5 +199,21 @@ namespace Viewer3D
         {
             toggleLighting_ContextMenu.Show((Control)toggleLightingCheckbox_Split, e.Location);
         }
+
+        private void colorLighting_Click(object sender, EventArgs e)
+        {
+            var lightingColorForm = new LightingColorForm(  canvas.lighting.LightAmbientColor,
+                                                            canvas.lighting.LightDiffuseColor,
+                                                            canvas.lighting.LightSpecularColor);
+
+            if (lightingColorForm.ShowDialog() != DialogResult.OK)
+                return;
+
+            canvas.lighting.LightAmbientColor = lightingColorForm.ambientColorButton.BackColor;
+            canvas.lighting.LightDiffuseColor = lightingColorForm.diffuseColorButton.BackColor;
+            canvas.lighting.LightSpecularColor = lightingColorForm.specularColorButton.BackColor;
+            canvas.lighting.RefreshLightingColor();
+            canvas.Render();
+        }
     }
 }

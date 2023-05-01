@@ -130,6 +130,9 @@
   <data name="flashlighton_256x254" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\flashlighton.256x254.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="rainbow_palette_256x256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Icons\rainbow-palette.256x256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="reset_256x224" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Icons\reset.256x224.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

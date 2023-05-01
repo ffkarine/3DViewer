@@ -103,6 +103,16 @@ namespace Viewer3D.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rainbow_palette_256x256 {
+            get {
+                object obj = ResourceManager.GetObject("rainbow_palette_256x256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap reset_256x224 {
             get {
                 object obj = ResourceManager.GetObject("reset_256x224", resourceCulture);

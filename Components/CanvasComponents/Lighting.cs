@@ -17,6 +17,9 @@ namespace Viewer3D.Components.CanvasComponents
         private int _lightSpecularShininess;
         private readonly Camera camera;
 
+        private bool isAmbienteDiffuseLightingEnabled = true;
+        private bool isSpecularLightingEnabled = false;
+
         public Color4 LightAmbientColor { get; set; }
         public Color4 LightDiffuseColor { get; set; }
         public Color4 LightSpecularColor { get; set; }
@@ -46,8 +49,22 @@ namespace Viewer3D.Components.CanvasComponents
             this.LightSpecularShininess = lightSpecularShininess;
         }
 
+        public void RefreshLightingColor()
+        {
+            if(isAmbienteDiffuseLightingEnabled)
+            {
+                SetupAmbientLighting();
+                SetupDiffuseLighting();
+            }
+                
+            if(isSpecularLightingEnabled)
+                SetupSpecularLighting();
+        }
+
         public void ToggleAmbientDiffuseLighting(bool enabled)
         {
+            isAmbienteDiffuseLightingEnabled = enabled;
+
             if (enabled)
                 EnableAmbientDiffuseLighting();
 
@@ -57,6 +74,8 @@ namespace Viewer3D.Components.CanvasComponents
 
         public void ToggleSpecularLighting(bool enabled)
         {
+            isSpecularLightingEnabled = enabled;
+
             if (enabled)
                 SetupSpecularLighting();
 

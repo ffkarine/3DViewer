@@ -44,6 +44,7 @@ namespace Viewer3D
             this.toggleLighting_ContextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toggleLighting_ContextMenu_AmbientDiffuse = new System.Windows.Forms.ToolStripMenuItem();
             this.toggleLighting_ContextMenu_Specular = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorLighting = new System.Windows.Forms.ToolStripMenuItem();
             this.toggleLightingCheckbox_Split = new System.Windows.Forms.CheckBox();
             this.optionsPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -206,10 +207,11 @@ namespace Viewer3D
             this.toggleLighting_ContextMenu.ImageScalingSize = new System.Drawing.Size(25, 25);
             this.toggleLighting_ContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toggleLighting_ContextMenu_AmbientDiffuse,
-            this.toggleLighting_ContextMenu_Specular});
+            this.toggleLighting_ContextMenu_Specular,
+            this.colorLighting});
             this.toggleLighting_ContextMenu.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Table;
             this.toggleLighting_ContextMenu.Name = "contextMenuStrip1";
-            this.toggleLighting_ContextMenu.Size = new System.Drawing.Size(35, 62);
+            this.toggleLighting_ContextMenu.Size = new System.Drawing.Size(35, 120);
             // 
             // toggleLighting_ContextMenu_AmbientDiffuse
             // 
@@ -244,6 +246,21 @@ namespace Viewer3D
             this.toggleLighting_ContextMenu_Specular.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toggleLighting_ContextMenu_Specular.ToolTipText = "Toggle specular lighting";
             this.toggleLighting_ContextMenu_Specular.CheckedChanged += new System.EventHandler(this.toggleLighting_ContextMenu_Specular_CheckedChanged);
+            // 
+            // colorLighting
+            // 
+            this.colorLighting.AccessibleDescription = "Change lighting color";
+            this.colorLighting.AccessibleName = "Change lighting color";
+            this.colorLighting.AutoSize = false;
+            this.colorLighting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.colorLighting.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.colorLighting.Image = global::Viewer3D.Properties.Resources.rainbow_palette_256x256;
+            this.colorLighting.Name = "colorLighting";
+            this.colorLighting.ShowShortcutKeys = false;
+            this.colorLighting.Size = new System.Drawing.Size(34, 29);
+            this.colorLighting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.colorLighting.ToolTipText = "Change lighting color";
+            this.colorLighting.Click += new System.EventHandler(this.colorLighting_Click);
             // 
             // toggleLightingCheckbox_Split
             // 
@@ -430,5 +447,6 @@ namespace Viewer3D
         private TableLayoutPanel infoPanel;
         private Splitter splitter2;
         private Splitter splitter1;
+        private ToolStripMenuItem colorLighting;
     }
 }
