@@ -1,4 +1,4 @@
-using OpenTK.Graphics.OpenGL;
+﻿using OpenTK.Graphics.OpenGL;
 using OpenTK.Mathematics;
 using Viewer3D.Components.CanvasComponents;
 using Viewer3D.Components.MeshComponents;
@@ -7,14 +7,14 @@ using Vector2 = System.Numerics.Vector2;
 
 namespace Viewer3D
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         private bool isFirstMouseHold = true;
         private Vector2 lastMousePosition;
         private Canvas canvas;
         private List<Mesh> grains = new List<Mesh>();
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             lastMousePosition = Vector2.Zero;
@@ -29,7 +29,7 @@ namespace Viewer3D
 
                 var filestream = openFileDialog1.OpenFile();
 
-                if (!STLWrapper.TryParseSTLFile(filestream, out mesh) )
+                if (!STLWrapper.TryParseSTLFile(filestream, out mesh))
                 {
                     showErrorMessageBox("Erro na leitura do arquivo. Tente novamente ou utilize outro arquivo.");
                     return;
@@ -87,7 +87,7 @@ namespace Viewer3D
 
         private void glControl_MouseDown(object sender, MouseEventArgs e)
         {
-            if(MouseButtons.Left == e.Button)
+            if (MouseButtons.Left == e.Button)
             {
                 isFirstMouseHold = true;
                 glControl.MouseMove += glControl_MouseMove;
@@ -102,7 +102,7 @@ namespace Viewer3D
 
         private void glControl_MouseMove(object sender, MouseEventArgs e)
         {
-            if(isFirstMouseHold) 
+            if (isFirstMouseHold)
             {
                 isFirstMouseHold = false;
 
@@ -170,7 +170,7 @@ namespace Viewer3D
             }
 
 
-            canvas.lighting.ToggleAmbientDiffuseLighting( checkbox.Checked );
+            canvas.lighting.ToggleAmbientDiffuseLighting(checkbox.Checked);
             canvas.Render();
         }
 
@@ -178,13 +178,13 @@ namespace Viewer3D
         {
             ToolStripMenuItem specular = (ToolStripMenuItem)sender;
 
-            if(specular.Checked)
+            if (specular.Checked)
             {
                 toggleLighting_ContextMenu_AmbientDiffuse.Checked = specular.Checked;
                 toggleLightingCheckbox.Checked = specular.Checked;
             }
 
-            canvas.lighting.ToggleSpecularLighting( specular.Checked );
+            canvas.lighting.ToggleSpecularLighting(specular.Checked);
             canvas.Render();
         }
 

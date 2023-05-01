@@ -19,7 +19,6 @@ C:\Users\karin\Desktop\Dev\Viewer3D\bin\Debug\net6.0-windows\runtimes\win-x64\na
 C:\Users\karin\Desktop\Dev\Viewer3D\bin\Debug\net6.0-windows\runtimes\win-x86\native\glfw3.dll
 C:\Users\karin\Desktop\Dev\Viewer3D\bin\Debug\net6.0-windows\OpenTK.WinForms.dll
 C:\Users\karin\Desktop\Dev\Viewer3D\obj\Debug\net6.0-windows\Viewer3D.csproj.AssemblyReference.cache
-C:\Users\karin\Desktop\Dev\Viewer3D\obj\Debug\net6.0-windows\Viewer3D.Form1.resources
 C:\Users\karin\Desktop\Dev\Viewer3D\obj\Debug\net6.0-windows\Viewer3D.Properties.Resources.resources
 C:\Users\karin\Desktop\Dev\Viewer3D\obj\Debug\net6.0-windows\Viewer3D.csproj.GenerateResource.cache
 C:\Users\karin\Desktop\Dev\Viewer3D\obj\Debug\net6.0-windows\Viewer3D.GeneratedMSBuildEditorConfig.editorconfig
@@ -32,3 +31,4 @@ C:\Users\karin\Desktop\Dev\Viewer3D\obj\Debug\net6.0-windows\refint\Viewer3D.dll
 C:\Users\karin\Desktop\Dev\Viewer3D\obj\Debug\net6.0-windows\Viewer3D.pdb
 C:\Users\karin\Desktop\Dev\Viewer3D\obj\Debug\net6.0-windows\Viewer3D.genruntimeconfig.cache
 C:\Users\karin\Desktop\Dev\Viewer3D\obj\Debug\net6.0-windows\ref\Viewer3D.dll
+C:\Users\karin\Desktop\Dev\Viewer3D\obj\Debug\net6.0-windows\Viewer3D.MainForm.resources

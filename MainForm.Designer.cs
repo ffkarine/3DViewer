@@ -2,7 +2,7 @@
 
 namespace Viewer3D
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -31,7 +31,6 @@ namespace Viewer3D
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.glControl = new OpenTK.WinForms.GLControl();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -117,8 +116,12 @@ namespace Viewer3D
             this.resetRotationButton.AccessibleDescription = "Reset rotation";
             this.resetRotationButton.AccessibleName = "Reset rotation";
             this.resetRotationButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.resetRotationButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("resetRotationButton.BackgroundImage")));
+            this.resetRotationButton.BackgroundImage = global::Viewer3D.Properties.Resources.reset_256x224;
             this.resetRotationButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.resetRotationButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.resetRotationButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.resetRotationButton.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.resetRotationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.resetRotationButton.Location = new System.Drawing.Point(0, 0);
             this.resetRotationButton.Margin = new System.Windows.Forms.Padding(0);
             this.resetRotationButton.Name = "resetRotationButton";
@@ -133,8 +136,12 @@ namespace Viewer3D
             this.resetZoomButton.AccessibleDescription = "Reset zoom";
             this.resetZoomButton.AccessibleName = "Reset zoom";
             this.resetZoomButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.resetZoomButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("resetZoomButton.BackgroundImage")));
+            this.resetZoomButton.BackgroundImage = global::Viewer3D.Properties.Resources.zoom_reset_256x256;
             this.resetZoomButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.resetZoomButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.resetZoomButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.resetZoomButton.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.resetZoomButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.resetZoomButton.Location = new System.Drawing.Point(0, 38);
             this.resetZoomButton.Margin = new System.Windows.Forms.Padding(0);
             this.resetZoomButton.Name = "resetZoomButton";
@@ -150,9 +157,14 @@ namespace Viewer3D
             this.toggleWireframeCheckbox.AccessibleName = "Toggle wireframe";
             this.toggleWireframeCheckbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.toggleWireframeCheckbox.Appearance = System.Windows.Forms.Appearance.Button;
-            this.toggleWireframeCheckbox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("toggleWireframeCheckbox.BackgroundImage")));
+            this.toggleWireframeCheckbox.BackgroundImage = global::Viewer3D.Properties.Resources.wireframe_256x256;
             this.toggleWireframeCheckbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.toggleWireframeCheckbox.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toggleWireframeCheckbox.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.toggleWireframeCheckbox.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.toggleWireframeCheckbox.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.toggleWireframeCheckbox.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.toggleWireframeCheckbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.toggleWireframeCheckbox.Location = new System.Drawing.Point(0, 76);
             this.toggleWireframeCheckbox.Margin = new System.Windows.Forms.Padding(0);
             this.toggleWireframeCheckbox.Name = "toggleWireframeCheckbox";
@@ -168,13 +180,18 @@ namespace Viewer3D
             this.toggleLightingCheckbox.AccessibleName = "Toggle lighting";
             this.toggleLightingCheckbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.toggleLightingCheckbox.Appearance = System.Windows.Forms.Appearance.Button;
-            this.toggleLightingCheckbox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("toggleLightingCheckbox.BackgroundImage")));
+            this.toggleLightingCheckbox.BackgroundImage = global::Viewer3D.Properties.Resources.bulb_light_on_235x256;
             this.toggleLightingCheckbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.toggleLightingCheckbox.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toggleLightingCheckbox.Checked = true;
             this.toggleLightingCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.toggleLightingCheckbox.ContextMenuStrip = this.toggleLighting_ContextMenu;
-            this.toggleLightingCheckbox.Location = new System.Drawing.Point(-1, 0);
+            this.toggleLightingCheckbox.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.toggleLightingCheckbox.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.toggleLightingCheckbox.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.toggleLightingCheckbox.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.toggleLightingCheckbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.toggleLightingCheckbox.Location = new System.Drawing.Point(0, 0);
             this.toggleLightingCheckbox.Margin = new System.Windows.Forms.Padding(0);
             this.toggleLightingCheckbox.Name = "toggleLightingCheckbox";
             this.toggleLightingCheckbox.Size = new System.Drawing.Size(40, 38);
@@ -235,19 +252,25 @@ namespace Viewer3D
             this.toggleLightingCheckbox_Split.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.toggleLightingCheckbox_Split.Appearance = System.Windows.Forms.Appearance.Button;
             this.toggleLightingCheckbox_Split.AutoCheck = false;
+            this.toggleLightingCheckbox_Split.BackColor = System.Drawing.SystemColors.Control;
             this.toggleLightingCheckbox_Split.BackgroundImage = global::Viewer3D.Properties.Resources.down_arrow_256x100;
             this.toggleLightingCheckbox_Split.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.toggleLightingCheckbox_Split.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toggleLightingCheckbox_Split.Checked = true;
             this.toggleLightingCheckbox_Split.CheckState = System.Windows.Forms.CheckState.Checked;
             this.toggleLightingCheckbox_Split.ContextMenuStrip = this.toggleLighting_ContextMenu;
-            this.toggleLightingCheckbox_Split.Location = new System.Drawing.Point(35, 0);
+            this.toggleLightingCheckbox_Split.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.toggleLightingCheckbox_Split.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.toggleLightingCheckbox_Split.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.toggleLightingCheckbox_Split.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.toggleLightingCheckbox_Split.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.toggleLightingCheckbox_Split.Location = new System.Drawing.Point(39, 0);
             this.toggleLightingCheckbox_Split.Margin = new System.Windows.Forms.Padding(0);
             this.toggleLightingCheckbox_Split.Name = "toggleLightingCheckbox_Split";
-            this.toggleLightingCheckbox_Split.Size = new System.Drawing.Size(15, 38);
+            this.toggleLightingCheckbox_Split.Size = new System.Drawing.Size(11, 38);
             this.toggleLightingCheckbox_Split.TabIndex = 11;
             this.toolTip1.SetToolTip(this.toggleLightingCheckbox_Split, "Lighting options");
-            this.toggleLightingCheckbox_Split.UseVisualStyleBackColor = true;
+            this.toggleLightingCheckbox_Split.UseVisualStyleBackColor = false;
             this.toggleLightingCheckbox_Split.MouseClick += new System.Windows.Forms.MouseEventHandler(this.toggleLightingCheckbox_Split_MouseClick);
             // 
             // optionsPanel
@@ -355,7 +378,7 @@ namespace Viewer3D
             this.splitter1.TabIndex = 20;
             this.splitter1.TabStop = false;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -366,7 +389,7 @@ namespace Viewer3D
             this.Controls.Add(this.glControl);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Viewer3D";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
