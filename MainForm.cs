@@ -218,7 +218,8 @@ namespace Viewer3D
 
         private void settingsButton_Click(object sender, EventArgs e)
         {
-            var settingsForm = new SettingsForm(canvas.BackgroundColor,
+            var settingsForm = new SettingsForm(colorLighting_Click, 
+                                                canvas.BackgroundColor,
                                                 canvas.WireframeColor);
 
             if (settingsForm.ShowDialog() != DialogResult.OK)

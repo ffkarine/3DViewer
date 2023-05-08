@@ -13,14 +13,16 @@ namespace Viewer3D
 {
     public partial class SettingsForm : Form
     {
+        private Action<object, EventArgs> lightingColorForm;
         public SettingsForm()
         {
             InitializeComponent();
         }
-        public SettingsForm(Color4 backgroundColor, Color4 wireframeColor)
+        public SettingsForm(Action<object, EventArgs> lightingColorForm, Color4 backgroundColor, Color4 wireframeColor)
         {
             InitializeComponent();
 
+            this.lightingColorForm = lightingColorForm;
             this.BackgroundColorButton.BackColor = ((Color)backgroundColor);
             this.wireframeColorButton.BackColor = ((Color)wireframeColor);
         }
@@ -34,6 +36,11 @@ namespace Viewer3D
                 return;
 
             colorBtn.BackColor = colorDialog1.Color;
+        }
+
+        private void lightingColorButton_Click(object sender, EventArgs e)
+        {
+            lightingColorForm.Invoke(sender, e);
         }
     }
 }
