@@ -46,8 +46,10 @@ namespace Viewer3D
             this.toggleLighting_ContextMenu_Specular = new System.Windows.Forms.ToolStripMenuItem();
             this.colorLighting = new System.Windows.Forms.ToolStripMenuItem();
             this.toggleLightingCheckbox_Split = new System.Windows.Forms.CheckBox();
+            this.settingsButton = new System.Windows.Forms.Button();
             this.optionsPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.settingsContainer = new System.Windows.Forms.Panel();
             this.volumePanel = new System.Windows.Forms.FlowLayoutPanel();
             this.volumeLabel = new System.Windows.Forms.Label();
             this.volumeTextBox = new System.Windows.Forms.TextBox();
@@ -59,6 +61,7 @@ namespace Viewer3D
             this.toggleLighting_ContextMenu.SuspendLayout();
             this.optionsPanel.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.settingsContainer.SuspendLayout();
             this.volumePanel.SuspendLayout();
             this.infoPanel.SuspendLayout();
             this.SuspendLayout();
@@ -290,12 +293,32 @@ namespace Viewer3D
             this.toggleLightingCheckbox_Split.UseVisualStyleBackColor = false;
             this.toggleLightingCheckbox_Split.MouseClick += new System.Windows.Forms.MouseEventHandler(this.toggleLightingCheckbox_Split_MouseClick);
             // 
+            // settingsButton
+            // 
+            this.settingsButton.AccessibleDescription = "Settings";
+            this.settingsButton.AccessibleName = "Settings";
+            this.settingsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.settingsButton.BackgroundImage = global::Viewer3D.Properties.Resources.settings_outline_249x256;
+            this.settingsButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.settingsButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.settingsButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.settingsButton.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settingsButton.Location = new System.Drawing.Point(0, 204);
+            this.settingsButton.Margin = new System.Windows.Forms.Padding(0);
+            this.settingsButton.Name = "settingsButton";
+            this.settingsButton.Size = new System.Drawing.Size(50, 38);
+            this.settingsButton.TabIndex = 14;
+            this.toolTip1.SetToolTip(this.settingsButton, "Settings");
+            this.settingsButton.UseVisualStyleBackColor = true;
+            // 
             // optionsPanel
             // 
             this.optionsPanel.Controls.Add(this.resetRotationButton);
             this.optionsPanel.Controls.Add(this.resetZoomButton);
             this.optionsPanel.Controls.Add(this.toggleWireframeCheckbox);
             this.optionsPanel.Controls.Add(this.panel1);
+            this.optionsPanel.Controls.Add(this.settingsContainer);
             this.optionsPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.optionsPanel.Location = new System.Drawing.Point(0, 28);
             this.optionsPanel.Margin = new System.Windows.Forms.Padding(0);
@@ -312,6 +335,14 @@ namespace Viewer3D
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(50, 38);
             this.panel1.TabIndex = 13;
+            // 
+            // settingsContainer
+            // 
+            this.settingsContainer.Controls.Add(this.settingsButton);
+            this.settingsContainer.Location = new System.Drawing.Point(3, 155);
+            this.settingsContainer.Name = "settingsContainer";
+            this.settingsContainer.Size = new System.Drawing.Size(50, 243);
+            this.settingsContainer.TabIndex = 15;
             // 
             // volumePanel
             // 
@@ -413,6 +444,7 @@ namespace Viewer3D
             this.toggleLighting_ContextMenu.ResumeLayout(false);
             this.optionsPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.settingsContainer.ResumeLayout(false);
             this.volumePanel.ResumeLayout(false);
             this.volumePanel.PerformLayout();
             this.infoPanel.ResumeLayout(false);
@@ -448,5 +480,7 @@ namespace Viewer3D
         private Splitter splitter2;
         private Splitter splitter1;
         private ToolStripMenuItem colorLighting;
+        private Button settingsButton;
+        private Panel settingsContainer;
     }
 }

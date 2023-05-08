@@ -123,6 +123,16 @@ namespace Viewer3D.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap settings_outline_249x256 {
+            get {
+                object obj = ResourceManager.GetObject("settings_outline_249x256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sun_256x256 {
             get {
                 object obj = ResourceManager.GetObject("sun_256x256", resourceCulture);
