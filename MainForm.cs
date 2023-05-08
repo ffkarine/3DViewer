@@ -215,5 +215,18 @@ namespace Viewer3D
             canvas.lighting.RefreshLightingColor();
             canvas.Render();
         }
+
+        private void settingsButton_Click(object sender, EventArgs e)
+        {
+            var settingsForm = new SettingsForm(canvas.BackgroundColor,
+                                                canvas.WireframeColor);
+
+            if (settingsForm.ShowDialog() != DialogResult.OK)
+                return;
+
+            canvas.BackgroundColor = settingsForm.BackgroundColorButton.BackColor;
+            canvas.WireframeColor = settingsForm.wireframeColorButton.BackColor;
+            canvas.Render();
+        }
     }
 }

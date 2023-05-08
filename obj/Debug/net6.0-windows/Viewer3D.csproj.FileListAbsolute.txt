@@ -33,3 +33,4 @@ C:\Users\karin\Desktop\Dev\Viewer3D\obj\Debug\net6.0-windows\Viewer3D.genruntime
 C:\Users\karin\Desktop\Dev\Viewer3D\obj\Debug\net6.0-windows\ref\Viewer3D.dll
 C:\Users\karin\Desktop\Dev\Viewer3D\obj\Debug\net6.0-windows\Viewer3D.MainForm.resources
 C:\Users\karin\Desktop\Dev\Viewer3D\obj\Debug\net6.0-windows\Viewer3D.LightingColorForm.resources
+C:\Users\karin\Desktop\Dev\Viewer3D\obj\Debug\net6.0-windows\Viewer3D.SettingsForm.resources

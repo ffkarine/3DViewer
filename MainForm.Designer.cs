@@ -307,10 +307,11 @@ namespace Viewer3D
             this.settingsButton.Location = new System.Drawing.Point(0, 204);
             this.settingsButton.Margin = new System.Windows.Forms.Padding(0);
             this.settingsButton.Name = "settingsButton";
-            this.settingsButton.Size = new System.Drawing.Size(50, 38);
+            this.settingsButton.Size = new System.Drawing.Size(48, 38);
             this.settingsButton.TabIndex = 14;
             this.toolTip1.SetToolTip(this.settingsButton, "Settings");
             this.settingsButton.UseVisualStyleBackColor = true;
+            this.settingsButton.Click += new System.EventHandler(this.settingsButton_Click);
             // 
             // optionsPanel
             // 

@@ -34,8 +34,13 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.okButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
+            this.wireframeColorGroup = new System.Windows.Forms.GroupBox();
+            this.wireframeColorButton = new System.Windows.Forms.Button();
+            this.wireframeColorLabel = new System.Windows.Forms.Label();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.backgroundColorGroup.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.wireframeColorGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // backgroundColorGroup
@@ -57,6 +62,7 @@
             this.BackgroundColorButton.Size = new System.Drawing.Size(31, 30);
             this.BackgroundColorButton.TabIndex = 7;
             this.BackgroundColorButton.UseVisualStyleBackColor = true;
+            this.BackgroundColorButton.Click += new System.EventHandler(this.ColorButton_Click);
             // 
             // backgroundColorLabel
             // 
@@ -96,11 +102,42 @@
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             // 
+            // wireframeColorGroup
+            // 
+            this.wireframeColorGroup.Controls.Add(this.wireframeColorButton);
+            this.wireframeColorGroup.Controls.Add(this.wireframeColorLabel);
+            this.wireframeColorGroup.Location = new System.Drawing.Point(12, 82);
+            this.wireframeColorGroup.Name = "wireframeColorGroup";
+            this.wireframeColorGroup.Size = new System.Drawing.Size(299, 64);
+            this.wireframeColorGroup.TabIndex = 8;
+            this.wireframeColorGroup.TabStop = false;
+            // 
+            // wireframeColorButton
+            // 
+            this.wireframeColorButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.wireframeColorButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.wireframeColorButton.Location = new System.Drawing.Point(262, 23);
+            this.wireframeColorButton.Name = "wireframeColorButton";
+            this.wireframeColorButton.Size = new System.Drawing.Size(31, 30);
+            this.wireframeColorButton.TabIndex = 7;
+            this.wireframeColorButton.UseVisualStyleBackColor = true;
+            this.wireframeColorButton.Click += new System.EventHandler(this.ColorButton_Click);
+            // 
+            // wireframeColorLabel
+            // 
+            this.wireframeColorLabel.AutoSize = true;
+            this.wireframeColorLabel.Location = new System.Drawing.Point(6, 23);
+            this.wireframeColorLabel.Name = "wireframeColorLabel";
+            this.wireframeColorLabel.Size = new System.Drawing.Size(119, 20);
+            this.wireframeColorLabel.TabIndex = 1;
+            this.wireframeColorLabel.Text = "Wireframe Color";
+            // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(323, 346);
+            this.Controls.Add(this.wireframeColorGroup);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.backgroundColorGroup);
             this.Name = "SettingsForm";
@@ -108,6 +145,8 @@
             this.backgroundColorGroup.ResumeLayout(false);
             this.backgroundColorGroup.PerformLayout();
             this.panel4.ResumeLayout(false);
+            this.wireframeColorGroup.ResumeLayout(false);
+            this.wireframeColorGroup.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -120,5 +159,9 @@
         private Panel panel4;
         private Button okButton;
         private Button cancelButton;
+        private GroupBox wireframeColorGroup;
+        public Button wireframeColorButton;
+        private Label wireframeColorLabel;
+        private ColorDialog colorDialog1;
     }
 }

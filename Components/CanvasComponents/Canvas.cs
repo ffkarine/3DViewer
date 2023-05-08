@@ -12,6 +12,8 @@ namespace Viewer3D.Components.CanvasComponents
         private readonly GLControl glControl;
         private readonly CheckBox toggleWireframeCheckbox;
 
+        public Color4 BackgroundColor { get; set; }
+        public Color4 WireframeColor { get; set; }
         public double ScalingFactor { get; private set; }
         public Camera camera;
         public Lighting lighting;
@@ -21,6 +23,10 @@ namespace Viewer3D.Components.CanvasComponents
         {
             this.glControl = glControl;
             this.toggleWireframeCheckbox = toggleWireframeCheckbox;
+
+            BackgroundColor = Color4.MidnightBlue;
+            WireframeColor = Color4.Black;
+
             drawingQueue = new List<Mesh>();
             camera = new Camera();
 
@@ -38,7 +44,7 @@ namespace Viewer3D.Components.CanvasComponents
         {
             glControl.MakeCurrent();
 
-            GL.ClearColor(Color4.MidnightBlue);
+            GL.ClearColor(BackgroundColor);
             GL.Enable(EnableCap.DepthTest);
 
             eye = camera.GetEye().ToOpenTKVector3();
@@ -60,7 +66,7 @@ namespace Viewer3D.Components.CanvasComponents
             if (toggleWireframeCheckbox.Checked)
             {       
                 foreach (Mesh mesh in drawingQueue)
-                    DrawWireframe(mesh, Color4.DarkSlateGray);
+                    DrawWireframe(mesh, WireframeColor);
             }
 
             glControl.SwapBuffers();
