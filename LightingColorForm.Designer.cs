@@ -37,14 +37,14 @@
             this.specularLightingGroup = new System.Windows.Forms.GroupBox();
             this.specularColorButton = new System.Windows.Forms.Button();
             this.specularLightingLabel = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.dialogButtonPanel = new System.Windows.Forms.Panel();
             this.okButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.ambientLightingGroup.SuspendLayout();
             this.diffuseLightingGroup.SuspendLayout();
             this.specularLightingGroup.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.dialogButtonPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // diffuseLightingLabel
@@ -133,14 +133,14 @@
             this.specularLightingLabel.TabIndex = 0;
             this.specularLightingLabel.Text = "Specular Lighting:";
             // 
-            // panel4
+            // dialogButtonPanel
             // 
-            this.panel4.Controls.Add(this.okButton);
-            this.panel4.Controls.Add(this.cancelButton);
-            this.panel4.Location = new System.Drawing.Point(12, 299);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(299, 35);
-            this.panel4.TabIndex = 5;
+            this.dialogButtonPanel.Controls.Add(this.okButton);
+            this.dialogButtonPanel.Controls.Add(this.cancelButton);
+            this.dialogButtonPanel.Location = new System.Drawing.Point(12, 299);
+            this.dialogButtonPanel.Name = "dialogButtonPanel";
+            this.dialogButtonPanel.Size = new System.Drawing.Size(299, 35);
+            this.dialogButtonPanel.TabIndex = 5;
             // 
             // okButton
             // 
@@ -172,7 +172,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(323, 346);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.dialogButtonPanel);
             this.Controls.Add(this.specularLightingGroup);
             this.Controls.Add(this.diffuseLightingGroup);
             this.Controls.Add(this.ambientLightingGroup);
@@ -184,7 +184,7 @@
             this.diffuseLightingGroup.PerformLayout();
             this.specularLightingGroup.ResumeLayout(false);
             this.specularLightingGroup.PerformLayout();
-            this.panel4.ResumeLayout(false);
+            this.dialogButtonPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -197,7 +197,7 @@
         private GroupBox diffuseLightingGroup;
         private GroupBox specularLightingGroup;
         private Label specularLightingLabel;
-        private Panel panel4;
+        private Panel dialogButtonPanel;
         private Button okButton;
         private Button cancelButton;
         private ColorDialog colorDialog1;

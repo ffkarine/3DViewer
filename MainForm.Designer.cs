@@ -304,7 +304,7 @@ namespace Viewer3D
             this.settingsButton.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.settingsButton.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.InactiveCaption;
             this.settingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settingsButton.Location = new System.Drawing.Point(0, 204);
+            this.settingsButton.Location = new System.Drawing.Point(-3, 205);
             this.settingsButton.Margin = new System.Windows.Forms.Padding(0);
             this.settingsButton.Name = "settingsButton";
             this.settingsButton.Size = new System.Drawing.Size(48, 38);
@@ -315,6 +315,9 @@ namespace Viewer3D
             // 
             // optionsPanel
             // 
+            this.optionsPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.optionsPanel.BackColor = System.Drawing.SystemColors.Control;
             this.optionsPanel.Controls.Add(this.resetRotationButton);
             this.optionsPanel.Controls.Add(this.resetZoomButton);
             this.optionsPanel.Controls.Add(this.toggleWireframeCheckbox);
@@ -326,6 +329,7 @@ namespace Viewer3D
             this.optionsPanel.Name = "optionsPanel";
             this.optionsPanel.Size = new System.Drawing.Size(50, 401);
             this.optionsPanel.TabIndex = 12;
+            this.optionsPanel.Resize += new System.EventHandler(this.optionsPanel_Resize);
             // 
             // panel1
             // 
@@ -339,10 +343,11 @@ namespace Viewer3D
             // 
             // settingsContainer
             // 
+            this.settingsContainer.BackColor = System.Drawing.SystemColors.Control;
             this.settingsContainer.Controls.Add(this.settingsButton);
             this.settingsContainer.Location = new System.Drawing.Point(3, 155);
             this.settingsContainer.Name = "settingsContainer";
-            this.settingsContainer.Size = new System.Drawing.Size(50, 243);
+            this.settingsContainer.Size = new System.Drawing.Size(56, 243);
             this.settingsContainer.TabIndex = 15;
             // 
             // volumePanel
@@ -438,6 +443,7 @@ namespace Viewer3D
             this.Controls.Add(this.glControl);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MinimumSize = new System.Drawing.Size(928, 546);
             this.Name = "MainForm";
             this.Text = "Viewer3D";
             this.menuStrip1.ResumeLayout(false);

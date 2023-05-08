@@ -228,5 +228,21 @@ namespace Viewer3D
             canvas.WireframeColor = settingsForm.wireframeColorButton.BackColor;
             canvas.Render();
         }
+
+        private void settingsContainer_Resize()
+        {
+            var settingsContainerHeight = optionsPanel.Height -
+                                    resetRotationButton.Height -
+                                    resetZoomButton.Height -
+                                    toggleLightingCheckbox.Height -
+                                    toggleWireframeCheckbox.Height - 7;
+
+            settingsContainer.Height = settingsContainerHeight;
+        }
+
+        private void optionsPanel_Resize(object sender, EventArgs e)
+        {
+            settingsContainer_Resize();   
+        }
     }
 }
