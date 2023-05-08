@@ -211,7 +211,7 @@ namespace Viewer3D
             this.colorLighting});
             this.toggleLighting_ContextMenu.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Table;
             this.toggleLighting_ContextMenu.Name = "contextMenuStrip1";
-            this.toggleLighting_ContextMenu.Size = new System.Drawing.Size(35, 120);
+            this.toggleLighting_ContextMenu.Size = new System.Drawing.Size(35, 92);
             // 
             // toggleLighting_ContextMenu_AmbientDiffuse
             // 
