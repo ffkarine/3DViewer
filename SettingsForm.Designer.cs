@@ -132,6 +132,11 @@
             this.wireframeColorLabel.TabIndex = 1;
             this.wireframeColorLabel.Text = "Wireframe Color";
             // 
+            // colorDialog1
+            // 
+            this.colorDialog1.AnyColor = true;
+            this.colorDialog1.FullOpen = true;
+            // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -140,6 +145,7 @@
             this.Controls.Add(this.wireframeColorGroup);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.backgroundColorGroup);
+            this.MinimumSize = new System.Drawing.Size(341, 393);
             this.Name = "SettingsForm";
             this.Text = "Settings";
             this.backgroundColorGroup.ResumeLayout(false);

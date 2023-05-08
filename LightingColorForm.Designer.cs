@@ -176,6 +176,7 @@
             this.Controls.Add(this.specularLightingGroup);
             this.Controls.Add(this.diffuseLightingGroup);
             this.Controls.Add(this.ambientLightingGroup);
+            this.MinimumSize = new System.Drawing.Size(341, 393);
             this.Name = "LightingColorForm";
             this.Text = "LightingColorForm";
             this.ambientLightingGroup.ResumeLayout(false);
